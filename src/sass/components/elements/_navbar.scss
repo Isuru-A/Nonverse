@@ -1,0 +1,60 @@
+.nav-section {
+  width: 100%;
+  margin-bottom: 15%;
+
+  .splash {
+    font-size: 1.35rem;
+    margin-left: 20%;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+
+    a {
+      font-size: 1.25rem;
+      color: $font-main;
+      text-decoration: none;
+      padding: 4% 30% 4%;
+      margin: 1% 0;
+    }
+
+    .active {
+      background-color: $main-splash;
+      box-shadow: 5px 0 25px 0 $main-splash;
+      color: $main-mid;
+    }
+  }
+}
+
+.side-bar {
+  background-color: $main-mid;
+  box-shadow: 5px 0 35px 0 $main-mid;
+
+  svg {
+    position: absolute;
+    top: 4%;
+    left: 2%;
+    cursor: pointer;
+  }
+
+  nav {
+    position: absolute;
+    //left: 2%;
+    top: 15%;
+    width: 10%;
+  }
+
+  .logout {
+    position: absolute;
+    font-size: 1.25rem;
+    bottom: 3%;
+    left: 2%;
+    cursor: pointer;
+
+    &:hover {
+      opacity: .7;
+    }
+  }
+}

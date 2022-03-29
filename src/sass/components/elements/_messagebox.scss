@@ -1,0 +1,21 @@
+.messages {
+  flex-wrap: wrap;
+  width: 100%;
+  display: flex;
+  gap: 1%;
+}
+.message-box {
+  width: min-content;
+  white-space: nowrap;
+  box-shadow: 5px 0 15px 0 $main-darker;
+  padding: 1% 1%;
+  border-radius: 10px;
+  margin-bottom: 1%;
+  .link {
+    text-decoration: underline;
+    cursor: pointer;
+    &:hover {
+      opacity: .5;
+    }
+  }
+}

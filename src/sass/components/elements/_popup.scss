@@ -1,0 +1,58 @@
+.popup-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba($main-dark, .8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  .popup {
+    position: absolute;
+    background-color: $main-darker;
+    box-shadow: 5px 0 35px 0 $main-darker;
+    border-radius: 20px;
+    min-height: 20%;
+    width: 20%;
+    .popup-content {
+      padding: 0 4%;
+      margin-top: 4%;
+      width: 92%;
+      h1 {
+        color: $main-splash;
+        font-weight: normal;
+      }
+    }
+    .exit {
+      color: orangered;
+      position: absolute;
+      top: 8%;
+      right: 4%;
+      transform: scale(1.5);
+      z-index: 10;
+      cursor: pointer;
+
+      &:hover {
+        opacity: .7;
+      }
+    }
+  }
+  .loader {
+    z-index: 10;
+    background-color: $main-darker;
+    border-radius: 20px;
+  }
+}
+#confirmation-pop-description {
+  margin-top: 5%;
+}
+.confirm-pop-button {
+  background-color: $main-splash;
+  padding: .5% 1%;
+  position: absolute;
+  bottom: 8%;
+  right: 4%;
+}
+

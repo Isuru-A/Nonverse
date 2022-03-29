@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Round&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  @media only screen and (max-width: 1920px) {
+    font-size: 14px;
+  }
+  .App {
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
+.action-cover {
+  z-index: 5;
+  pointer-events: none;
+  opacity: .7;
+}
+
+// Variables
+@import "./variables";
+
+// Components
+@import "./components/loader";
+@import "./components/pageblock";
+@import "./components/notifications";
+
+
+// Elements
+@import "./components/elements/section";
+@import "./components/elements/buttons";
+@import "./components/elements/navbar";
+@import "./components/elements/messagebox";
+@import "./components/elements/modal";
+@import "./components/elements/form";
+@import "./components/elements/popup";

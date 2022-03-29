@@ -1,0 +1,16 @@
+.notification-portal {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  width: 30%;
+  bottom: 1%;
+  right: .5%;
+  .notification {
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 1px 2px 10px 0 $main-darker;
+    .notification-content {
+      margin: 2% 2%;
+    }
+  }
+}

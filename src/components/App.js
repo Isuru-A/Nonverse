@@ -1,9 +1,10 @@
+import ComingSoon from "./ComingSoon";
 
 
 function App() {
   return (
     <div className="App">
-
+        <ComingSoon/>
     </div>
   );
 }

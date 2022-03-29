@@ -1,0 +1,58 @@
+// Font
+* {
+  font-family: "Nova Round", serif;
+}
+$font-main: #ECF0F3;
+$font-dark: #333344;
+
+// Colors
+$main: #242849;
+$main-mid: #1E213D;
+$main-dark: #202442;
+$main-darker: #1c1e36;
+
+$main-splash: #6951FF;
+//$main-splash: #00ff77;
+
+// Gradients
+$gradient-main-90: linear-gradient(90deg, #2FEBE0 0%, #9685FF 100%);
+$gradient-main-180: linear-gradient(180deg, #2FEBE0 0%, #9685FF 100%);
+
+$gradient-error-90: linear-gradient(90deg, rgb(255, 51, 0) 0%, rgb(255, 115, 0) 100%);
+$gradient-error-180: linear-gradient(180deg, rgb(255, 51, 0) 0%, rgb(255, 115, 0) 100%);
+
+
+// Config
+body {
+  background-color: $main;
+}
+
+// Classes
+
+.success {
+  color: #00FF47 !important;
+}
+.danger {
+  color: #FF1F00 !important;
+}
+.warn {
+  color: #FFA901 !important;
+}
+.splash {
+  color: $main-splash !important;
+}
+.default {
+  color: $font-main !important;
+}
+.dark {
+  color: $font-dark !important;
+}
+.bold {
+  font-weight: bold !important;
+}
+.link {
+  color:rgb(0, 100, 255) !important;
+}
+.op-05 {
+  opacity: .5 !important;
+}

@@ -1,0 +1,41 @@
+.section-wrapper {
+  width: 100%;
+  height: 100%;
+  .section-container {
+    padding: 0 3%;
+    width: 94%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 15% 85%;
+    .title {
+      margin-top: 2.5%;
+      color: $font-main;
+      font-size: 2.25rem;
+      font-weight: normal;
+      span {
+        font-size: 2.25rem;
+        opacity: 0.5;
+      }
+    }
+    .section {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      .section-title {
+        font-size: 1.6rem;
+        font-weight: normal;
+        color: $main-splash;
+        height: max-content;
+        margin-bottom: 3%;
+        span {
+          font-size: 1.6rem;
+          font-weight: normal;
+        }
+        .divider {
+          opacity: .5;
+        }
+      }
+    }
+  }
+}

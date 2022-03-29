@@ -1,0 +1,112 @@
+form {
+  input {
+    border: none;
+    outline: none;
+  }
+
+  input {
+    width: 100%;
+    height: 45px;
+    margin: 15px 0;
+    background-color: $main-dark;
+    border: 2px solid $main-splash;
+    border-image-source: $gradient-main-90;
+    border-width: 0 0 3px 0;
+    border-image-slice: 5;
+    font-size: 1.2rem;
+    color: $font-main;
+  }
+
+  .checkbox-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    .checkbox {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      input[type=checkbox] {
+        height: .9rem;
+        width: auto;
+        padding: 0;
+        margin: 0;
+      }
+
+      .text {
+        margin-left: 0.5rem;
+        font-size: 1rem !important;
+      }
+    }
+
+    .error {
+      margin-top: 1%;
+      margin-bottom: 2%;
+    }
+  }
+
+  #field-title {
+    opacity: .5;
+  }
+
+  .field-error {
+    border-image-source: $gradient-error-90;
+    margin-bottom: 5px;
+  }
+
+  .button-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 5% 0 10% 0;
+
+    .button {
+      width: 40%;
+    }
+  }
+
+  .error {
+    color: orangered;
+    margin-top: 0;
+    display: flex;
+  }
+}
+
+.summary {
+  margin: 5% 0;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+
+  span {
+    font-size: 1.2rem;
+    color: $font-main;
+    margin: 1% 0;
+  }
+}
+
+.links {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.selector-node {
+  display: grid;
+  grid-template-columns: 1rem 100%;
+  grid-column-gap: .8rem;
+
+  .selected {
+    background-color: $main-splash !important;
+  }
+
+  #selector-node-box {
+    background-color: $main;
+    border: 2px solid $main-splash;
+    border-radius: 5px;
+    height: 1rem;
+    width: 1rem;
+    cursor: pointer;
+  }
+}

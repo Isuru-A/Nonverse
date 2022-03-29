@@ -1,0 +1,37 @@
+.button {
+  height: 3vh;
+  border: none;
+  outline: none;
+  width: min-content;
+  padding: 0 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  white-space: nowrap;
+  cursor: pointer;
+  color: $main-splash;
+  background-color: $main-splash;
+  box-shadow: 2px 3px 12px 0 $main-splash;
+  &:hover {
+    opacity: .8;
+  }
+}
+
+.simple-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: $main-splash;
+  &:hover {
+    opacity: .7;
+  }
+ }
+
+.button-in-line {
+  padding: .5% .5%;
+  border-radius: 5px;
+  cursor: pointer;
+  &:hover {
+    opacity: .5;
+  }
+}

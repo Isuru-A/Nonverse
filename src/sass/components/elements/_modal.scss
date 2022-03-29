@@ -1,0 +1,86 @@
+.modal-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba($main-dark, .8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+
+  .modal {
+    position: absolute;
+    background-color: $main-darker;
+    box-shadow: 5px 0 35px 0 $main-darker;
+    border-radius: 20px;
+    min-height: 30%;
+    width: 40%;
+
+    h1 {
+      color: $main-splash;
+      font-weight: normal;
+      font-size: 1.6rem;
+      margin-top: 2.5%;
+      margin-left: 2.5%;
+    }
+
+    .text {
+      display: flex;
+      flex-direction: column;
+
+      span {
+        padding: 0.3% 0;
+      }
+    }
+
+    .exit {
+      color: orangered;
+      position: absolute;
+      top: 7%;
+      right: 3%;
+      transform: scale(1.5);
+      z-index: 10;
+      cursor: pointer;
+
+      &:hover {
+        opacity: .7;
+      }
+    }
+
+    .modal-content {
+      padding: 0 2.5%;
+      margin-top: 2.5%;
+      width: 95%;
+    }
+  }
+
+  .progressive-modal-view {
+    #modal-continue {
+      font-size: 1.2rem;
+      position: absolute;
+      bottom: 6%;
+      right: 3%;
+    }
+  }
+
+  #affiliate {
+    opacity: .3;
+    position: absolute;
+    width: 70%;
+    bottom: 5%;
+  }
+
+  #submit {
+    font-size: 1.2rem;
+    position: absolute;
+    bottom: 6%;
+    right: 3%;
+  }
+
+  .loader {
+    background-color: $main-darker;
+    border-radius: 20px;
+  }
+}
