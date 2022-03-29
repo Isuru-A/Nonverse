@@ -1,0 +1,36 @@
+.header {
+  display: flex;
+  padding: 4vh 2vw;
+  align-items: center;
+  //background-color: saddlebrown;
+  .nv-logo {
+    float: left;
+  }
+  #auth-actions {
+    float: right;
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    .auth-button {
+      display: flex;
+      align-items: center;
+      color: $font-dark !important;
+      text-decoration: none;
+      font-size: 1.25rem;
+      &:hover {
+        color: $main-splash !important;
+      }
+    }
+    #login-button {
+      background-color: $main-splash;
+      height: max-content;
+      padding: .25vh .5vw;
+      border-radius: 5px;
+      color: $font-main !important;
+      &:hover {
+        opacity: .8;
+      }
+    }
+  }
+}
