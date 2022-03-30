@@ -1,6 +1,6 @@
 import axios from "axios";
 
-let url = `http://${process.env.REACT_APP_API_SERVER}/`
+let url = `https://${process.env.REACT_APP_API_SERVER}/`
 let token = ''
 
 class api_base {

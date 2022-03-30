@@ -34,7 +34,7 @@ const Notification = ({id, weight, children, timeout}) => {
     }
 
     return (
-        <FadeIn duration={.5}>
+        <FadeIn duration={.5} key={id}>
             <div className="notification" style={{borderColor: fill}}>
                 <div className="notification-content">
                     {children}
