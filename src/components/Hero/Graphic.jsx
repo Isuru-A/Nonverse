@@ -1,7 +1,7 @@
 import React from "react";
 import {motion} from "framer-motion";
 
-const Graphic = ({show}) => {
+const Graphic = () => {
     return (
         <div className="graphic-container">
             <motion.div id="drag"

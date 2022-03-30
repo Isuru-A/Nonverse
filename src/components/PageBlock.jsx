@@ -22,9 +22,9 @@ const PageBlock = ({code}) => {
     return (
         <div className="page-block">
             <div className="error">
-                <span className="default">{code}</span>
+                <span className="dark">{code}</span>
                 <span className="splash">{" | "}</span>
-                <span className="default">{message}</span>
+                <span className="dark">{message}</span>
             </div>
         </div>
     )

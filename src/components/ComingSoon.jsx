@@ -1,16 +1,23 @@
 import React from "react";
+import {motion} from "framer-motion";
 
 const ComingSoon = () => {
     return (
-        <div className="page-block">
+        <motion.div
+            className="page-block"
+            key="page-block-cs"
+            initial={{opacity: 0}}
+            animate={{opacity: 1}}
+            exit={{ opacity: 0}}
+        >
             <div className="error">
                 <div className="error-stack">
-                    <span className="default">Coming Soon!</span>
-                    <span className="default" id="under-construction">This area is still under construction</span>
-                    <span className="default" id="under-construction">{`ETA: ${process.env.REACT_APP_ETA}`}</span>
+                    <span className="splash">Coming Soon!</span>
+                    <span className="dark" id="under-construction">This area is still under construction</span>
+                    <span className="dark" id="under-construction">{`ETA: ${process.env.REACT_APP_ETA}`}</span>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 
