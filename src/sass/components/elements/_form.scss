@@ -8,13 +8,13 @@ form {
     width: 100%;
     height: 45px;
     margin: 15px 0;
-    background-color: $main-dark;
+    background-color: $main;
     border: 2px solid $main-splash;
-    border-image-source: $gradient-main-90;
+    //border-image-source: $gradient-main-90;
     border-width: 0 0 3px 0;
     border-image-slice: 5;
     font-size: 1.2rem;
-    color: $font-main;
+    color: $font-dark;
   }
 
   .checkbox-wrapper {
