@@ -24,6 +24,9 @@
         color: $main-splash !important;
       }
     }
+    .auth-active {
+      border-bottom: solid 2px $main-splash;
+    }
     #login-button {
       background-color: $main-splash;
       height: max-content;
