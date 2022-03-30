@@ -3,12 +3,12 @@
   flex-direction: column;
   position: fixed;
   width: 30%;
-  bottom: 1%;
-  right: .5%;
+  bottom: 4vh;
+  left: 2vw;
   .notification {
     display: flex;
-    border-radius: 10px;
-    box-shadow: 1px 2px 10px 0 $main-darker;
+    border-left: solid 3px;
+    background-color: $main-mid;
     .notification-content {
       margin: 2% 2%;
     }
