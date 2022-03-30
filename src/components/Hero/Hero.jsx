@@ -1,28 +1,22 @@
-import React from "react";
-import InLineButton from "../Elements/InLineButton";
+import React, {useState} from "react";
 import Graphic from "../Graphic";
+import HeroText from "./HeroText";
 
 const Hero = () => {
+    const [show, setShow] = useState(true)
 
     return (
-        <div className="hero">
-            <div className="text">
-                <h1>P L A Y<span className="splash">.</span></h1>
-                <h1>S I M P L I F I E D<span className="splash">.</span></h1>
-                <h2>
-                    An <span className="splash">invite</span> only social recreation project
-                </h2>
-                <InLineButton id={"request-cta"}>Request Invitation</InLineButton>
+        <>
+            <Graphic show={show}/>
+            <div className="hero">
+                <HeroText show={show} setShow={setShow}/>
+                <div className="text text-left">
+                    {/*<h2>*/}
+                    {/*    Studio de <span className="splash">N O N V E R S E</span>*/}
+                    {/*</h2>*/}
+                </div>
             </div>
-            {/*<div className="text text-left">*/}
-            {/*    <h1>P L A Y<span className="splash">.</span></h1>*/}
-            {/*    <h1>S I M P L I F I E D<span className="splash">.</span></h1>*/}
-            {/*    <h2>*/}
-            {/*        An <span className="splash">invite</span> only social recreation project*/}
-            {/*    </h2>*/}
-            {/*    <InLineButton id={"request-cta"}>Request Invitation</InLineButton>*/}
-            {/*</div>*/}
-        </div>
+        </>
     )
 }
 

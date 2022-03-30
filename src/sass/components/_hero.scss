@@ -67,11 +67,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+}
+#drag {
+
+  z-index: 100;
 }
 .gooey{
   background-image: linear-gradient(120deg, #0a80ef 0%, #5905ea 100%);
   border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
-  width: 20vw; height: 35vh;
+  width: 20vw; height: 19vw;
   animation: morph 30s linear infinite;
   transform-style: preserve-3d;
   outline: 1px solid transparent;
@@ -81,9 +86,6 @@
   opacity: .5;
   //margin-left: 17vw;
   cursor: pointer;
-  &:hover {
-
-  }
 }
 .gooey:before,
 .gooey:after{

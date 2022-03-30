@@ -1,16 +1,15 @@
 import NotificationPortal from "./NotificationPortal";
-import {BrowserRouter, Route, Routes, Navigate} from "react-router-dom";
+import {BrowserRouter} from "react-router-dom";
 import Logo from "./Elements/Logo";
-import Hero from "./Hero/Hero";
 import InLineButton from "./Elements/InLineButton";
-import Graphic from "./Graphic";
 import React from "react";
+import AnimateRoutes from "./AnimateRoutes";
 
 function App() {
+
     return (
         <div className="App">
             <BrowserRouter>
-                <Graphic/>
                 <NotificationPortal/>
                 <div className="header">
                     <Logo color={'#333344'}/>
@@ -21,9 +20,7 @@ function App() {
                            rel="noreferrer">Login</a>
                     </div>
                 </div>
-                <Routes>
-                    <Route exact path={'/'} element={<Hero/>}/>
-                </Routes>
+                <AnimateRoutes/>
                 <span className="dark" id="nv-badge">Made With Love, Nonverse Studios - 2022</span>
             </BrowserRouter>
         </div>
