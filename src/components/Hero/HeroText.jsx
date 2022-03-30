@@ -9,6 +9,8 @@ const HeroText = ({show, setShow}) => {
     return (
         <motion.div className="text"
                     key="hero-text-r"
+                    initial={{opacity: 0}}
+                    animate={{opacity: 1}}
                     exit={{ opacity: 0}}
         >
             <h1>P L A Y<span className="splash">.</span></h1>
@@ -18,7 +20,7 @@ const HeroText = ({show, setShow}) => {
             </h2>
             <InLineButton id={"request-cta"} action={() => {
                 setShow(false)
-                navigate('/test')
+                navigate('/request')
             }}>Request Invitation</InLineButton>
         </motion.div>
     )

@@ -1,0 +1,36 @@
+.request-container {
+  //background-color: #2FEBE0;
+  margin-left: 5vw;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 25%;
+
+  h1 {
+    font-size: 2rem;
+    font-weight: normal;
+
+    span {
+      font-size: 2rem;
+    }
+
+    .dark {
+      opacity: .5;
+    }
+    .splash {
+      font-weight: bold;
+    }
+  }
+
+  form {
+    margin-top: 3%;
+    .simple-button {
+      float: right;
+      margin-top: 3%;
+      background-color: $main-splash;
+      color: $font-main;
+      padding: .25vh .5vw;
+      border-radius: 5px;
+    }
+  }
+}

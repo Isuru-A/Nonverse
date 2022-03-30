@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import Graphic from "../Graphic";
+import Graphic from "./Graphic";
 import HeroText from "./HeroText";
 
 const Hero = () => {

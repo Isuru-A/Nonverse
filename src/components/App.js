@@ -1,12 +1,15 @@
 import NotificationPortal from "./NotificationPortal";
 import {BrowserRouter} from "react-router-dom";
-import Logo from "./Elements/Logo";
-import InLineButton from "./Elements/InLineButton";
-import React from "react";
+import React, {useEffect} from "react";
 import AnimateRoutes from "./AnimateRoutes";
 import Header from "./Elements/Header";
+import api_base from "../scripts/api/api";
 
 function App() {
+
+    useEffect(() => {
+        api_base.initialise()
+    })
 
     return (
         <div className="App">
